@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Playpen Sans', cursive;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: gray;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 99;
+}
+
+#navList {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    gap: 25px;
+
+}
+
+#navList a {
+    font-size: 17px;
+}
+
+#navList a:hover {
+    color: black;
+}
+
+#menuBtn {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.upper {
+    margin-top: 50px;
+}
+
+#about .col-lg-8 img {
+
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    border-radius: 0px;
+
+}
+
+.active-menu {
+    border-bottom: 2px solid red;
+}
+
+#menu .btn:hover {
+
+    border-bottom: 2px solid red;
+}
+
+#menu .col-lg-4 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#menu img {
+    max-width: 200px;
+}
+
+.card {
+    border: none;
+    border-radius: 0px;
+}
+
+#events .card {
+    position: relative;
+    height: 70vh;
+
+
+}
+
+#events .card-img-top {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#events .card-body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+#events .card-body b {
+    margin-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+
+.card-body p {
+    letter-spacing: 0.6px;
+}
+
+#chefs .card {
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.card-img-top{
+    border-radius: 0px;
+}
+
+#chefs .card:hover {
+
+    transform: scale(1.05);
+}
+#chefs .card-img-top{
+    height: 300px;
+    object-fit: cover;
+}
+
+.form-control{
+    border-radius: 0px !important;
+}
+.form-control:focus {
+    border-color: rgb(199, 16, 16) !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.rotate {
+    animation: rotation 2s;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  
+@media (max-width:968px) {
+    nav {
+        padding: 10px;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    #menuBtn {
+        display: block;
+        z-index: 999;
+    }
+
+    #navList {
+        margin-top: 0px;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: -100%;
+        background-color: whitesmoke;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+      #navList a{
+        font-size: 23px;
+      }
+    .col-lg-6 h2 {
+        margin-top: 20px;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+
+    #about {
+        text-align: left;
+
+    }
+
+    #events .card {
+
+        text-align: left;
+    }
+
+    #chefs .card {
+        margin: 20px 0px;
+    }
+    form .col-md-6{
+        margin-top: 30px;
+    }
+
+}

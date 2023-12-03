@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/menu/menu-item-1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h2 class="fw-bold">Yummy<span class="text-danger">.</span></h2>
+        <ul id="navList">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#events">Events</a>
+            <a href="#chefs">Chefs</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        <div class="d-flex gap-3 align-items-center">
+            <a class="btn btn-danger rounded-5" href="#book">Book a Table</a>
+            <i class="ri-menu-3-line fs-2" id="menuBtn"></i>
+        </div>
+    </nav>
+    <section id="home" class="bg-light">
+        <div class="container">
+            <div class="row flex-wrap-reverse">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold ">Enjoy Your Healthy <br>
+                        Delicious Food</h2>
+                    <p class="mt-2">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas
+                        beatae cumque
+                        eum quaerat.</p>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-danger rounded-5">Book a Table</button>
+                        <button class="btn d-flex align-items-center gap-1"><i
+                                class="ri-play-circle-line text-danger fs-2"></i> Watch Video</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-5 p-lg-5">
+                    <img src="./img/menu/menu-item-1.png" alt="" class="img-fluid rotate linear infinite">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center  upper">
+            <p>ABOUT US</p>
+            <h2>Learn More About Us</h2>
+        </div>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="./img/about.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-4">
+                    <div class="my-2">
+                        <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</i>
+                        <ul class="my-2">
+                            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li>Duis aute irure dolor in reprehenderit in voluptate velit.
+
+                            </li>
+                        </ul>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <img src="./img/about-2.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center  upper">
+            <p>OUR MENU</p>
+            <h2>Check Our Yummy Menu</h2>
+        </div>
+        <div class="d-flex  align-items-center justify-content-center gap-1 mt-2" id="menuNav">
+            <button class="btn active-menu">Starter</button>
+            <button class="btn">Breakfast</button>
+            <button class="btn">Lunch</button>
+            <button class="btn">Dinner</button>
+
+        </div>
+        <div class="container mt-5">
+            <div class="row" id="menuContainer" data-aos="fade-zoom-in">
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-1.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$6.27</b>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-2.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$9.95</b>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-3.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$10.52</b>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-4.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$5.95</b>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-5.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$12.24</b>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <img src="./img/menu/menu-item-6.png" alt="" class="img-fluid">
+                    <h4 class="mt-3">Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <b class="text-danger fs-3">$5.34</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center  upper">
+            <p>EVENTS</p>
+            <h2>Share Your Moments In Our Restaurant</h2>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-1.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Custom Parties</h5>
+                                <b class="fs-5">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-2.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Birthday Parties</h5>
+                                <b class="fs-4">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-3.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Private Parties</h5>
+                                <b class="fs-4">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-1.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Custom Parties</h5>
+                                <b class="fs-4">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-2.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Birthday Parties</h5>
+                                <b class="fs-4">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./img/events-3.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h5 class="fw-bold fs-3">Private Parties</h5>
+                                <b class="fs-4">$ 99</b>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus magnam
+                                    incidunt, ab aliquam quisquam? Perferendis praesentium, illo veniam ab consequuntur
+                                    eius labore, sint recusandae doloribus magnam, nobis quis ut.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="chefs" class="bg-light">
+        <div class="d-flex flex-column align-items-center  upper" data-aos="fade-up">
+            <p>CHEFS</p>
+            <h2>Our Professional Chefs</h2>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/chefs/chefs-1.jpg" alt="" class="card-img-top">
+
+
+                        <div class="card-body">
+                            <h5>Walter White</h5>
+                            <p>Master Chef</p>
+                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                                exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/chefs/chefs-2.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body">
+                            <h5>Sarah Jhonson</h5>
+                            <p>Patissier</p>
+                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                                exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/chefs/chefs-3.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body">
+                            <h5>William Anderson</h5>
+                            <p>Cook</p>
+                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                                exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="book" class="py-5" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center  upper">
+            <p>BOOK A TABLE</p>
+            <h2>Book Your Stay With Us</h2>
+        </div>
+        <div class="container my-5">
+
+            <div class="row bg-light py-3 shadow rounded">
+                <div class="col-md-4 p-3">
+                    <img src="./img/reservation.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-8 d-flex align-items-center justify-content-center">
+                    <form class="row g-3">
+                        <div class="col-md-6 ">
+
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                        </div>
+                        <div class="col-12">
+
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="date" class="form-control" id="phone" placeholder="Date">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="time" class="form-control" id="phone" placeholder="Time">
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <input type="text" class="form-control" id="city" placeholder="Your City">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" class="form-control" id="state" placeholder="Your State">
+                        </div>
+                        <div class="col-12">
+
+                            <textarea name="message" id="message" cols="30" class="form-control" rows="6"
+                                placeholder="Message"></textarea>
+
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-danger btn-lg rounded-5">Book A Table</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <p class="text-center">CONTACT</p>
+            <h5 class="text-center fw-bold fs-3 mb-4">Need Help? <span class="text-danger">Contact Us</span></h5>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115484.61602329691!2d86.90940401101749!3d25.24048652597029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f049f79910fbc7%3A0x9e3efe37aca8e227!2sBhagalpur%2C%20Bihar%2C%20India!5e0!3m2!1sen!2sus!4v1682485648718!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row mt-5 justify-content-center g-3">
+                <div class="col-md-6 ">
+                    <div class="bg-light shadow rounded p-3">
+                        <i class="fa-solid fa-map"></i>
+
+                        <h3>Our Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="p-3 bg-light shadow rounded">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <h3>Email Us</h3>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="p-3 bg-light shadow rounded">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-light shadow rounded">
+                        <i class="fa-solid fa-share"></i>
+
+                        <h3>Opening Hours</h3>
+                        <p>Mon To Sat:11AM - 10PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5 shadow mt-5">
+            <form class="row g-3">
+                <div class="col-md-6">
+
+                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                </div>
+
+                <div class="col-12">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Subject">
+                </div>
+
+                <div class="col-12">
+                    <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                </div>
+
+
+
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-danger rounded-5">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <b>Address</b>
+                        <p>A108 Adam Street <br>
+                            New York, NY 535022 - US</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <b>Reservations</b>
+                        <p>Phone: +1 5589 55488 55 <br>
+                            Email: info@example.com</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <b>Opening Hours</b>
+                        <p>Mon-Sat: 11AM - 23PM <br>
+                            Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" id="social">
+                    <h5 class="text-center fs-4">Follow Us</h5>
+                    <div class="d-flex align-items-center justify-content-center gap-3 fs-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-2">
+            <p class="text-center">© Copyright Yummy. All Rights Reserved</p>
+            <p class="text-center">Designed by BootstrapMade</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
