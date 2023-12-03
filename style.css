@@ -6,6 +6,7 @@
 }
 
 body {
+    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -164,7 +165,7 @@ section {
     box-shadow: none !important;
 }
 .rotate {
-    animation: rotation 2s;
+    animation: rotation 3s;
   }
   
   .linear {
