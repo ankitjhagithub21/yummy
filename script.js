@@ -71,5 +71,33 @@ const swiper = new Swiper('.swiper', {
   
     
   });
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const darkClass = 'dark-mode';
+
+  // Load saved mode from localStorage if any
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add(darkClass);
+    themeIcon.classList.remove('ri-moon-line');
+    themeIcon.classList.add('ri-sun-line');
+    document.querySelectorAll('nav, section, footer, h2').forEach(el => el.classList.add(darkClass));
+  }
+
+  themeToggle.addEventListener('click', function() {
+    const body = document.body;
+    const sections = document.querySelectorAll('nav, section, footer, h2');
+    
+    body.classList.toggle(darkClass);
+    sections.forEach(el => el.classList.toggle(darkClass));
+    
+    const darkModeOn = body.classList.contains(darkClass);
+    themeIcon.classList.toggle('ri-moon-line', !darkModeOn);
+    themeIcon.classList.toggle('ri-sun-line', darkModeOn);
+
+    // Save preference
+    localStorage.setItem('theme', darkModeOn ? 'dark' : 'light');
+  });
+});
 
 
