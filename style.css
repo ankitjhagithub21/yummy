@@ -315,3 +315,23 @@ body {
         padding: 20px;
         font-size: 0.9em;
       }
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #eee;
+}
+
+nav.dark-mode {
+  background-color: #232323;
+}
+
+section.dark-mode,
+footer.dark-mode {
+  background-color: #222 !important;
+  color: #ddd !important;
+}
+
+/* Optional: style other containers, headings, etc. for dark mode */
+/* Example: */
+h2.dark-mode {
+  color: #fafafa !important;
+}
