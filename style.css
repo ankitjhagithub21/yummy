@@ -80,6 +80,9 @@ section {
 .active-menu {
     border-bottom: 2px solid red;
 }
+#menu{
+  margin-bottom:50px;
+}
 
 #menu .btn:hover {
 
@@ -187,6 +190,21 @@ section {
   
   
 @media (max-width:968px) {
+  /* section {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+#testimonials{
+   min-height: fit-content;
+}
+ 
+ 
+
     nav {
         padding: 10px;
     }
@@ -214,9 +232,7 @@ section {
       #navList a{
         font-size: 23px;
       }
-    .col-lg-6 h2 {
-        margin-top: 20px;
-    }
+   
 
     .d-flex {
         justify-content: center;
@@ -240,6 +256,7 @@ section {
     }
 
 }
+
 #testimonials .card {
   background-color: white;
   border-radius: 15px;
@@ -288,9 +305,9 @@ body {
         padding: 40px 20px;
       }
 
-      section {
+      /* section {
         margin-bottom: 50px;
-      }
+      } */
 
       .image-section {
         background-size: cover;
@@ -334,4 +351,11 @@ footer.dark-mode {
 /* Example: */
 h2.dark-mode {
   color: #fafafa !important;
+}
+#contact.dark-mode{
+  color: #1a1a1a !important;
+}
+
+#contact .fa-solid{
+  margin-bottom: 10px;
 }
